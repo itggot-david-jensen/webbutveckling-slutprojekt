@@ -5,13 +5,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/Main.css">
         <title>PageName</title>
 </head>
-<%# on DOM load complete %>
+<!-- <%# on DOM load complete %> -->
+
 <body>
         <div class="wrapper">
+                <header>
+                        <div class="dropdownbutton" onclick="dropdown()"><i class="material-icons" id="dropdownbutton">arrow_drop_down</i></div>
+                        <div class="quote chakrafont">Lorem ipsum dolor</div>
+                </header>
+                <div class="dropdownmenu">
+                        <ul>
+                                <li class="menulink"><a href="settings.html" class="titiliumfont dropdownlink">settings</a></li>
+                                <li class="menulink"><a href="blackhole.html" class="titiliumfont dropdownlink">Black Holes</a></li>
+                        </ul>
+                </div>
                 <%=yield%>
+                <footer>
+                        <div class="filler">
+                                <h3 class="titiliumfont">Filler Anfang</h3>
+                                <p class="titiliumfont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                                        voluptatem officiis
+                                        saepe quod minima maiores repellendus recusandae!</p>
+                        </div>
+                        <div class="contact">
+                                <ul>
+                                        <li class="titiliumfont">Fånnumber</li>
+                                        <li class="titiliumfont">Fax</li>
+                                        <li class="titiliumfont">Emäil</li>
+                                </ul>
+                        </div>
+                </footer>
         </div>
+
+        <script src="JS/JS.js"></script>
 </body>
 
 </html>
