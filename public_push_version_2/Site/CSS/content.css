@@ -1,0 +1,24 @@
+.contentimage {
+  float: left;
+  width: 55vw;
+  height: 55vw;
+  margin: 2.5vw;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.contenttitle {
+  margin: 0; }
+
+.textcontent {
+  padding: 5vh 0 5vh 0;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.blackholeimage {
+  background-image: url("../Img/Blackhole_card_content.jpg"); }
+
+.planetimage {
+  background-image: url("../Img/Planet_card_content.jpg"); }
+
+.pulsarimage {
+  background-image: url("../Img/Pulsar_card_content.jpg"); }

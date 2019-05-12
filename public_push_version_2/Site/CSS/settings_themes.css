@@ -1,0 +1,104 @@
+.settings_theme {
+  width: 100vw;
+  box-sizing: border-box;
+  min-height: 100px;
+  border-width: 2.5px;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.themetogglecontainer {
+  border-width: 0;
+  border-right-width: 2.5px;
+  border-style: solid; }
+
+.themetoggle {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #4B4B4B;
+  height: 2rem;
+  width: 6rem;
+  margin-left: 10%;
+  transition: all 0.5s; }
+
+.toggleindicator {
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background-color: #646464; }
+
+.themepreview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-width: 2.5px;
+  border-style: solid;
+  box-sizing: border-box; }
+
+.themetitle {
+  padding-left: 10%; }
+
+.previewblock {
+  height: 100%; }
+
+.crabbackgroundactive {
+  background-color: #004d00; }
+
+.crabindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#crab_block_1 {
+  background-color: #D274C5; }
+
+#crab_block_2 {
+  background-color: #A179D9; }
+
+#crab_block_3 {
+  background-color: #D95276; }
+
+#crab_block_4 {
+  background-color: #731D55; }
+
+.godseyebackgroundactive {
+  background-color: #004d00; }
+
+.godseyeindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#godseye_block_1 {
+  background-color: #FF3B3B; }
+
+#godseye_block_2 {
+  background-color: #52EBCF; }
+
+#godseye_block_3 {
+  background-color: #4E2AFF; }
+
+#godseye_block_4 {
+  background-color: #27255F; }
+
+.messierbackgroundactive {
+  background-color: #004d00; }
+
+.messierindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#messier_block_1 {
+  background-color: #FFF1A8; }
+
+#messier_block_2 {
+  background-color: #D95204; }
+
+#messier_block_3 {
+  background-color: #590202; }
+
+#messier_block_4 {
+  background-color: #310300; }
+
+#grayborder {
+  border-color: grey; }

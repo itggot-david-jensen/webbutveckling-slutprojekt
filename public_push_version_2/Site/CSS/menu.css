@@ -1,0 +1,21 @@
+.dropdownmenu {
+  position: relative;
+  z-index: -10;
+  border: 2.5px;
+  border-style: solid;
+  border-color: black;
+  width: calc(100vw - 5px);
+  transition: all 0.75s ease;
+  grid-column: span 2;
+  top: 0;
+  overflow: hidden; }
+
+.menulink {
+  width: 80vw;
+  margin: 0 0 10px 0;
+  border: 0;
+  border-bottom: 2px;
+  border-style: solid; }
+
+.dropdownlink {
+  padding: 0 0 5px 0; }

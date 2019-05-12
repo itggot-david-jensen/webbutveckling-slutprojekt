@@ -1,0 +1,42 @@
+.index_item {
+  width: 100vw;
+  height: 100vw;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .index_item a {
+    height: 100%;
+    width: 100%; }
+
+.index_header {
+  position: absolute;
+  bottom: 5%;
+  right: -5%;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 50vw;
+  transform: skew(30deg);
+  box-shadow: 0px 0px 20px 5px rgba(50, 50, 50, 0.9);
+  height: 3rem;
+  transition: all 0.45s; }
+  .index_header p {
+    transition: all 0.45s;
+    padding-left: 10%;
+    transform: skew(-30deg); }
+
+.index_header:hover {
+  transform: skew(30deg);
+  width: 75vw;
+  height: 4.5rem; }
+  .index_header:hover p {
+    font-size: 1.5rem; }
+
+.index_blackhole {
+  background-image: url(../Img/Blackhole_card_finishedload.jpg); }
+
+.index_planet {
+  background-image: url(../Img/Planet_card_finishedload.jpg); }
+
+.index_pulsar {
+  background-image: url(../Img/Pulsar_card_finishedload.jpg); }
