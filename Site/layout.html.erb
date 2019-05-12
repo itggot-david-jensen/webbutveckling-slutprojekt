@@ -9,43 +9,44 @@
         <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
         <link rel="stylesheet" href="CSS/Main.css">
-        <title>PageName</title>
+        <title>FartyFartblast's Space Knowledge</title>
 </head>
-<!-- <%# on DOM load complete %> -->
 
-<body>
+<body onload="loadtheme()">
         <div class="wrapper">
-                <header>
+                <header class="themetarget">
                         <div id="headercontainer">
                                 <div id="dropdownbutton"><i class="material-icons"
                                                 id="dropdownarrow">arrow_drop_down</i></div>
-                                <div class="title chakrafont">Fartblast Info Inc.</div>
+                                <div class="title chakrafont themeheadertarget">Fartblast Info Inc.</div>
                         </div>
-                        <div class="dropdownmenu">
-                                <ul>
-                                        <li class="menulink"><a href="settings.html"
+                        <div class="dropdownmenu themetarget">
+                                <ul class="themetarget">
+                                        <li class="menulink themetarget"><a href="index.html"
+                                                        class="titiliumfont dropdownlink">Home</a></li>
+                                        <li class="menulink themetarget"><a href="settings.html"
                                                         class="titiliumfont dropdownlink">settings</a></li>
-                                        <li class="menulink"><a href=""
+                                        <li class="menulink themetarget"><a href=""
                                                         class="titiliumfont dropdownlink">Black Holes</a></li>
-                                        <li class="menulink"><a href=""
+                                        <li class="menulink themetarget"><a href=""
                                                         class="titiliumfont dropdownlink">Planets</a></li>
-                                        <li class="menulink"><a href=""
-                                                        class="titiliumfont dropdownlink">Pulsar</a></li>
+                                        <li class="menulink themetarget"><a href=""
+                                                        class="titiliumfont dropdownlink">Pulsars</a></li>
                                 </ul>
                         </div>
                 </header>
                 <div class="content">
                         <%=yield%>
                 </div>
-                <footer>
-                        <div class="filler titiliumfont">
+                <footer class="themetarget">
+                        <div class="filler titiliumfont themetarget">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
                                 voluptatem officiis
                                 saepe quod minima maiores repellendus recusandae! Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Sapiente, asperiores?
                         </div>
-                        <div class="contact">
-                                <h3 class="titiliumfont">Contact</h3>
+                        <div class="contact themetarget">
+                                <h3 class="chakrafont">Contact</h3>
                                 <ul>
                                         <li class="titiliumfont">Phone: <br> +44 1632 960811 </li>
                                         <li class="titiliumfont">Fax: <br> +44 161 999 8888 </li>

@@ -29,11 +29,15 @@ function content_in_index(load) {
     let number_2 = Math.floor(Math.random() * 3) + 1
     let item_1 = document.getElementById("index_item_1")
     let item_2 = document.getElementById("index_item_2")
-    let blackholes = '<a href=""><div class="index_header"><p class="index_header_text">Black holes</p></div></a>'
-    let planets = '<a href=""><div class="index_header"><p class="index_header_text">Planets</p></div></a>'
-    let pulsars = '<a href=""><div class="index_header"><p class="index_header_text">Pulsars</p></div></a>'
+    let blackholes = '<a href=""><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Black holes</p></div></a>'
+    let planets = '<a href=""><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Planets</p></div></a>'
+    let pulsars = '<a href=""><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Pulsars</p></div></a>'
     let first_item = true
     let i = 0
+
+    if (item_1 == null || item_2 == null){
+        return
+    }
 
     if (number_1 == number_2) {
         number_2 += 1
@@ -73,8 +77,44 @@ function content_in_index(load) {
 
         }
         i += 1
-
+        
     }
+}
+
+function themesetter(event) {
+    let themetarget = document.getElementsByClassName('themetarget')
+    let themeheadertarget = document.getElementsByClassName('themeheadertarget')
+    let themetexttarget = document.getElementsByClassName('themetexttarget')
+    let theme = sessionStorage.getItem('theme')
+    let headertheme = sessionStorage.getItem('headertheme')
+    let texttheme = sessionStorage.getItem('texttheme')
+    
+    for (i = 0; i < themetarget.length || i < themeheadertarget.length || i < themetexttarget.length; i++){
+        if(i < themetarget.length && themetarget != null && theme != null){
+            themetarget[i].classList.remove('crab','godseye')
+            themetarget[i].classList.add(theme)
+        }
+        if(i < themeheadertarget.length && themeheadertarget != null && headertheme != null){
+            themetarget[i].classList.remove('crabheader','godseyeheader')
+            themeheadertarget[i].classList.add(headertheme)
+        }
+        if(i < themetexttarget.length && themetexttarget != null && texttheme != null){
+            themetarget[i].classList.remove('crabtext','godseyetext')
+            themetexttarget[i].classList.add(texttheme)
+        }
+    }
+    console.log("theme set")
+}
+
+function loadtheme(load) {
+    console.log("loading theme")
+    let theme = sessionStorage.getItem('theme')
+    if(theme == null) {
+        sessionStorage.setItem('theme', 'godseye')
+        sessionStorage.setItem('headertheme', 'godseyeheader')
+        sessionStorage.setItem('texttheme', 'godseyetext')
+    }
+    themesetter()
 }
 
 // Fungerar typ som If/else-sats, är document.readyState === "interactive" eller document.readyState === "complete". ger den callback().
@@ -103,6 +143,7 @@ let dropdown = document.querySelector('.dropdownmenu')
 
 window.onload = closedropdown(dropdown)
 window.onload = content_in_index()
+window.onload = loadtheme()
 // DOMReady(function () {
 //     let item_1 = document.getElementById("index_item_1")
 //     let item_2 = document.getElementById("index_item_2")
