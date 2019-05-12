@@ -1,9 +1,11 @@
 .index_item
     width: 100vw
     height: 100vw
-    background-color: hotpink
+    background-color: black
     position: relative
     overflow: hidden
+    background-repeat: no-repeat
+    background-size: cover
     a
         height: 100%
         width: 100%
@@ -12,10 +14,10 @@
     position: absolute
     bottom: 5%
     right: -5%
-    background-color: black
+    background-color: rgba(50,50,50,0.5)
     width: 50vw
     transform: skew(30deg)
-    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75)
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.9)
     height: 3rem
     transition: all 0.45s
     p
@@ -29,3 +31,21 @@
     height: 4.5rem
     p
         font-size: 1.5rem
+
+.index_blackhole_loading
+    background-image: url(../Img/Blackhole_card_firstload.jpg)
+
+.index_blackhole
+    background-image: url(../Img/Blackhole_card_finishedload.jpg)
+
+.index_planet_loading
+    background-image: url(../Img/Planet_card_firstload.jpg)
+
+.index_planet
+    background-image: url(../Img/Planet_card_finishedload.jpg)
+
+.index_pulsar_loading
+    background-image: url(../Img/Pulsar_card_firstload.jpg)
+
+.index_pulsar
+    background-image: url(../Img/Pulsar_card_finishedload.jpg)
