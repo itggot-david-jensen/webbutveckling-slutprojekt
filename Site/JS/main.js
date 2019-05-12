@@ -46,30 +46,30 @@ function content_in_index(load) {
 
         if (number_1 == 1 && first_item) {
             item_1.innerHTML = blackholes
-            item_1.classList.add("index_blackhole_loading")
+            item_1.classList.add("index_blackhole")
             first_item = false
 
         } else if (number_1 == 2 && first_item) {
             item_1.innerHTML = planets
-            item_1.classList.add("index_planet_loading")
+            item_1.classList.add("index_planet")
             first_item = false
 
         } else if (number_1 == 3 && first_item) {
             item_1.innerHTML = pulsars
-            item_1.classList.add("index_pulsar_loading")
+            item_1.classList.add("index_pulsar")
             first_item = false
 
         } else if (number_2 == 1) {
             item_2.innerHTML = blackholes
-            item_2.classList.add("index_blackhole_loading")
+            item_2.classList.add("index_blackhole")
 
         } else if (number_2 == 2) {
             item_2.innerHTML = planets
-            item_2.classList.add("index_planet_loading")
+            item_2.classList.add("index_planet")
 
         } else if (number_2 == 3) {
             item_2.innerHTML = pulsars
-            item_2.classList.add("index_pulsar_loading")
+            item_2.classList.add("index_pulsar")
 
         }
         i += 1
@@ -79,9 +79,9 @@ function content_in_index(load) {
 
 // Fungerar typ som If/else-sats, är document.readyState === "interactive" eller document.readyState === "complete". ger den callback().
 // Annars ger den document.addEventListener("DOMContentLoaded", callback())
-function DOMReady(callback) {
-    document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback())
-}
+// function DOMReady(callback) {
+//     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback())
+// }
 
 document.querySelector('#dropdownbutton').addEventListener('click', function (e) {
     let dropdown = document.querySelector('.dropdownmenu')
@@ -103,46 +103,46 @@ let dropdown = document.querySelector('.dropdownmenu')
 
 window.onload = closedropdown(dropdown)
 window.onload = content_in_index()
-DOMReady(function () {
-    let item_1 = document.getElementById("index_item_1")
-    let item_2 = document.getElementById("index_item_2")
+// DOMReady(function () {
+//     let item_1 = document.getElementById("index_item_1")
+//     let item_2 = document.getElementById("index_item_2")
 
-    if (item_1 == document.getElementsByClassName("index_blackhole_loading")[0]) {
+//     if (item_1 == document.getElementsByClassName("index_blackhole_loading")[0]) {
 
-        item_1.classList.add("index_blackhole")
-        item_1.classList.remove("index_blackhole_loading")
+//         item_1.classList.add("index_blackhole")
+//         item_1.classList.remove("index_blackhole_loading")
 
-    } else if (item_1 == document.getElementsByClassName("index_planet_loading")[0]) {
+//     } else if (item_1 == document.getElementsByClassName("index_planet_loading")[0]) {
 
-        item_1.classList.add("index_planet")
-        item_1.classList.remove("index_planet_loading")
+//         item_1.classList.add("index_planet")
+//         item_1.classList.remove("index_planet_loading")
 
-    } else if (item_1 == document.getElementsByClassName("index_pulsar_loading")[0]) {
+//     } else if (item_1 == document.getElementsByClassName("index_pulsar_loading")[0]) {
 
-        item_1.classList.add("index_pulsar")
-        item_1.classList.remove("index_pulsar_loading")
+//         item_1.classList.add("index_pulsar")
+//         item_1.classList.remove("index_pulsar_loading")
 
-    } else {
-        console.log("something went wrong, contact administrator")
-    }
+//     } else {
+//         console.log("something went wrong, contact administrator")
+//     }
 
-    if (item_2 == document.getElementsByClassName("index_blackhole_loading")[0]) {
+//     if (item_2 == document.getElementsByClassName("index_blackhole_loading")[0]) {
 
-        item_2.classList.add("index_blackhole")
-        item_2.classList.remove("index_blackhole_loading")
+//         item_2.classList.add("index_blackhole")
+//         item_2.classList.remove("index_blackhole_loading")
 
-    } else if (item_2 == document.getElementsByClassName("index_planet_loading")[0]) {
+//     } else if (item_2 == document.getElementsByClassName("index_planet_loading")[0]) {
 
-        item_2.classList.add("index_planet")
-        item_2.classList.remove("index_planet_loading")
+//         item_2.classList.add("index_planet")
+//         item_2.classList.remove("index_planet_loading")
 
-    } else if (item_2 == document.getElementsByClassName("index_pulsar_loading")[0]) {
+//     } else if (item_2 == document.getElementsByClassName("index_pulsar_loading")[0]) {
 
-        item_2.classList.add("index_pulsar")
-        item_2.classList.remove("index_pulsar_loading")
+//         item_2.classList.add("index_pulsar")
+//         item_2.classList.remove("index_pulsar_loading")
 
-    } else {
-        console.log("something went wrong, contact administrator")
-    }
+//     } else {
+//         console.log("something went wrong, contact administrator")
+//     }
 
-})
+// })
