@@ -1,0 +1,64 @@
+.crab {
+  background-color: #731D55;
+  border-color: #D95276;
+  color: #A179D9; }
+  .crab h3 {
+    color: #D274C5; }
+  .crab i {
+    color: #D274C5; }
+  .crab a {
+    color: #A179D9; }
+  .crab a:visited {
+    color: #A179D9; }
+
+.crabheader {
+  color: #D274C5; }
+
+.crabtext {
+  color: #7F52A5; }
+
+.godseye {
+  border-color: #4E2AFF;
+  background-color: #27255F;
+  color: #52EBCF; }
+  .godseye h3 {
+    color: #FF3B3B; }
+  .godseye i {
+    color: #FF3B3B; }
+  .godseye a {
+    color: #52EBCF; }
+  .godseye a:visited {
+    color: #52EBCF; }
+
+.godseyeheader {
+  color: #FF3B3B; }
+
+.godseyetext {
+  color: #52EBCF; }
+  .godseyetext a {
+    color: #52EBCF; }
+  .godseyetext a:visited {
+    color: #52EBCF; }
+
+.messier {
+  border-color: #590202;
+  background-color: #310300;
+  color: #D95204; }
+  .messier h3 {
+    color: #FFF1A8; }
+  .messier i {
+    color: #FFF1A8; }
+  .messier a {
+    color: #D95204; }
+  .messier a:visited {
+    color: #D95204; }
+
+.messierheader {
+  color: #FFF1A8; }
+
+.messiertext {
+  color: #D95204; }
+  .messiertext a {
+    color: #D95204; }
+  .messiertext a:visited {
+    color: #D95204; }

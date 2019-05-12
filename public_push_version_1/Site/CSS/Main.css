@@ -1,0 +1,422 @@
+.chakrafont {
+  font-family: "Chakra Petch", sans-serif; }
+
+.titiliumfont {
+  font-family: "Titillium Web", sans-serif; }
+
+.themetarget {
+  transition: all 0.5s; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: black; }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: calc(4rem + 10px) auto auto; }
+
+.content {
+  min-height: 85vh;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.notyetimplemented {
+  background-color: rgba(25, 25, 25, 0.9);
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  position: sticky;
+  top: 0;
+  height: 4rem;
+  z-index: 10; }
+
+#headercontainer {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  z-index: 10; }
+
+#dropdownbutton {
+  height: 4rem; }
+
+#dropdownarrow {
+  font-size: 4rem; }
+
+.title {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.dropdownmenu {
+  position: relative;
+  z-index: -10;
+  border: 2.5px;
+  border-style: solid;
+  border-color: black;
+  width: calc(100vw - 5px);
+  transition: all 0.75s ease;
+  grid-column: span 2;
+  top: 0;
+  overflow: hidden; }
+
+.menulink {
+  width: 80vw;
+  margin: 0 0 10px 0;
+  border: 0;
+  border-bottom: 2px;
+  border-style: solid; }
+
+.dropdownlink {
+  padding: 0 0 5px 0; }
+
+footer {
+  min-height: 15vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  font-size: 0.8rem;
+  border-top-width: 2.5px;
+  border-style: solid; }
+  footer h3 {
+    padding-left: 10%; }
+
+.filler {
+  max-width: 55vw;
+  margin: 5% 0% 5% 10%;
+  padding-right: 5%;
+  border-width: 0;
+  border-right-width: 2.5px;
+  border-style: solid;
+  border-color: black; }
+
+.contact {
+  padding-right: 10%; }
+
+.index_item {
+  width: 100vw;
+  height: 100vw;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .index_item a {
+    height: 100%;
+    width: 100%; }
+
+.index_header {
+  position: absolute;
+  bottom: 5%;
+  right: -5%;
+  background-color: rgba(50, 50, 50, 0.5);
+  width: 50vw;
+  transform: skew(30deg);
+  box-shadow: 0px 0px 20px 5px rgba(50, 50, 50, 0.9);
+  height: 3rem;
+  transition: all 0.45s; }
+  .index_header p {
+    transition: all 0.45s;
+    padding-left: 10%;
+    transform: skew(-30deg); }
+
+.index_header:hover {
+  transform: skew(30deg);
+  width: 75vw;
+  height: 4.5rem; }
+  .index_header:hover p {
+    font-size: 1.5rem; }
+
+.index_blackhole {
+  background-image: url(../Img/Blackhole_card_finishedload.jpg); }
+
+.index_planet {
+  background-image: url(../Img/Planet_card_finishedload.jpg); }
+
+.index_pulsar {
+  background-image: url(../Img/Pulsar_card_finishedload.jpg); }
+
+.settings_theme {
+  width: 100vw;
+  box-sizing: border-box;
+  min-height: 100px;
+  border-width: 2.5px;
+  border-style: solid;
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+
+.themetogglecontainer {
+  border-width: 0;
+  border-right-width: 2.5px;
+  border-style: solid; }
+
+.themetoggle {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #4B4B4B;
+  height: 2rem;
+  width: 6rem;
+  margin-left: 10%;
+  transition: all 0.5s; }
+
+.toggleindicator {
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background-color: #646464; }
+
+.themepreview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-width: 2.5px;
+  border-style: solid;
+  box-sizing: border-box; }
+
+.themetitle {
+  padding-left: 10%; }
+
+.previewblock {
+  height: 100%; }
+
+.crabbackgroundactive {
+  background-color: #004d00; }
+
+.crabindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#crab_block_1 {
+  background-color: #D274C5; }
+
+#crab_block_2 {
+  background-color: #A179D9; }
+
+#crab_block_3 {
+  background-color: #D95276; }
+
+#crab_block_4 {
+  background-color: #731D55; }
+
+.godseyebackgroundactive {
+  background-color: #004d00; }
+
+.godseyeindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#godseye_block_1 {
+  background-color: #FF3B3B; }
+
+#godseye_block_2 {
+  background-color: #52EBCF; }
+
+#godseye_block_3 {
+  background-color: #4E2AFF; }
+
+#godseye_block_4 {
+  background-color: #27255F; }
+
+.messierbackgroundactive {
+  background-color: #004d00; }
+
+.messierindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+#messier_block_1 {
+  background-color: #FFF1A8; }
+
+#messier_block_2 {
+  background-color: #D95204; }
+
+#messier_block_3 {
+  background-color: #590202; }
+
+#messier_block_4 {
+  background-color: #310300; }
+
+#grayborder {
+  border-color: grey; }
+
+.crab {
+  background-color: #731D55;
+  border-color: #D95276;
+  color: #A179D9; }
+  .crab h3 {
+    color: #D274C5; }
+  .crab i {
+    color: #D274C5; }
+  .crab a {
+    color: #A179D9; }
+  .crab a:visited {
+    color: #A179D9; }
+
+.crabheader {
+  color: #D274C5; }
+
+.crabtext {
+  color: #7F52A5; }
+
+.godseye {
+  border-color: #4E2AFF;
+  background-color: #27255F;
+  color: #52EBCF; }
+  .godseye h3 {
+    color: #FF3B3B; }
+  .godseye i {
+    color: #FF3B3B; }
+  .godseye a {
+    color: #52EBCF; }
+  .godseye a:visited {
+    color: #52EBCF; }
+
+.godseyeheader {
+  color: #FF3B3B; }
+
+.godseyetext {
+  color: #52EBCF; }
+  .godseyetext a {
+    color: #52EBCF; }
+  .godseyetext a:visited {
+    color: #52EBCF; }
+
+.messier {
+  border-color: #590202;
+  background-color: #310300;
+  color: #D95204; }
+  .messier h3 {
+    color: #FFF1A8; }
+  .messier i {
+    color: #FFF1A8; }
+  .messier a {
+    color: #D95204; }
+  .messier a:visited {
+    color: #D95204; }
+
+.messierheader {
+  color: #FFF1A8; }
+
+.messiertext {
+  color: #D95204; }
+  .messiertext a {
+    color: #D95204; }
+  .messiertext a:visited {
+    color: #D95204; }
+
+.languageheader {
+  min-height: 100px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.languageoptioncontainer {
+  display: flex;
+  flex-wrap: wrap; }
+
+.languageoption {
+  min-width: calc(50vw - 5px);
+  min-height: 100px;
+  border-width: 2.5px;
+  border-style: solid;
+  position: relative; }
+
+.languagetoggle {
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: #4B4B4B;
+  height: 2rem;
+  width: 6rem;
+  margin-left: 10%;
+  transition: all 0.5s; }
+
+.languageindicator {
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background-color: #646464; }
+
+.languagetitle {
+  padding-left: 10%; }
+
+.swedishbackgroundactive {
+  background-color: #004d00; }
+
+.swedishindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.englishbackgroundactive {
+  background-color: #004d00; }
+
+.englishindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.russianbackgroundactive {
+  background-color: #004d00; }
+
+.russianindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.germanbackgroundactive {
+  background-color: #004d00; }
+
+.germanindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.frenchbackgroundactive {
+  background-color: #004d00; }
+
+.frenchindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.spanishbackgroundactive {
+  background-color: #004d00; }
+
+.spanishindicatoractive {
+  background-color: #008a00;
+  left: 4rem; }
+
+.contentimage {
+  float: left;
+  width: 55vw;
+  height: 55vw;
+  margin: 2.5vw;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.contenttitle {
+  margin: 0; }
+
+.textcontent {
+  padding: 5vh 0 5vh 0;
+  border-width: 2.5px;
+  border-style: solid; }
+
+.blackholeimage {
+  background-image: url("../Img/Blackhole_card_content.jpg"); }
+
+.planetimage {
+  background-image: url("../Img/Planet_card_content.jpg"); }
+
+.pulsarimage {
+  background-image: url("../Img/Pulsar_card_content.jpg"); }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/Main.css">
+        <title>FartyFartblast's Space Knowledge</title>
+</head>
+
+<body>
+        <div class="wrapper">
+                <header class="themetarget">
+                        <div id="headercontainer">
+                                <div id="dropdownbutton"><i class="material-icons"
+                                                id="dropdownarrow">arrow_drop_down</i></div>
+                                <div class="title chakrafont themeheadertarget ">Fartblast Info Inc.
+                                </div>
+                        </div>
+                        <div class="dropdownmenu themetarget">
+                                <ul class="themetarget">
+                                        <li class="menulink themetarget"><a href="index.html"
+                                                        class="titiliumfont dropdownlink">Home</a></li>
+                                        <li class="menulink themetarget"><a href="settings.html"
+                                                        class="titiliumfont dropdownlink">settings</a></li>
+                                        <li class="menulink themetarget"><a href="black_holes.html"
+                                                        class="titiliumfont dropdownlink">Black Holes</a></li>
+                                        <li class="menulink themetarget"><a href="planets.html"
+                                                        class="titiliumfont dropdownlink">Planets</a></li>
+                                        <li class="menulink themetarget"><a href="pulsars.html"
+                                                        class="titiliumfont dropdownlink">Pulsars</a></li>
+                                </ul>
+                        </div>
+                </header>
+                <div class="content">
+                        <div class="settings_theme themetarget">
+    <div class="themetogglecontainer themetarget">
+        <h3 class="chakrafont themetitle">Crab nebula</h3>
+        <div class="themetoggle" id="crabtoggle" onclick="manualthemesetter('crab')">
+            <div class="toggleindicator" id="crabindicator"></div>
+        </div>
+    </div>
+    <div class="themepreview" id="grayborder">
+        <div class="previewblock" id="crab_block_1"></div>
+        <div class="previewblock" id="crab_block_2"></div>
+        <div class="previewblock" id="crab_block_3"></div>
+        <div class="previewblock" id="crab_block_4"></div>
+    </div>
+</div>
+<div class="settings_theme themetarget">
+    <div class="themetogglecontainer themetarget">
+        <h3 class="chakrafont themetitle">God's eye nebula</h3>
+        <div class="themetoggle" id="godseyetoggle" onclick="manualthemesetter('godseye')">
+            <div class="toggleindicator" id="godseyeindicator"></div>
+        </div>
+    </div>
+    <div class="themepreview" id="grayborder">
+        <div class="previewblock" id="godseye_block_1"></div>
+        <div class="previewblock" id="godseye_block_2"></div>
+        <div class="previewblock" id="godseye_block_3"></div>
+        <div class="previewblock" id="godseye_block_4"></div>
+    </div>
+</div>
+<div class="settings_theme themetarget">
+    <div class="themetogglecontainer themetarget">
+        <h3 class="chakrafont themetitle">Black hole: Messier 87</h3>
+        <div class="themetoggle" id="messiertoggle" onclick="manualthemesetter('messier')">
+            <div class="toggleindicator" id="messierindicator"></div>
+        </div>
+    </div>
+    <div class="themepreview" id="grayborder">
+        <div class="previewblock" id="messier_block_1"></div>
+        <div class="previewblock" id="messier_block_2"></div>
+        <div class="previewblock" id="messier_block_3"></div>
+        <div class="previewblock" id="messier_block_4"></div>
+    </div>
+</div>
+
+<div class="languageheader chakrafont themetarget">
+    <h3>Languages for Content pages</h3>
+</div>
+
+<div class="languageoptioncontainer themetarget">
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">Swedish</h3>
+            <div class="languagetoggle" id="swedishtoggle" onclick="languagesetter('swedish')">
+                <div class="languageindicator" id="swedishindicator"></div>
+            </div>
+        </div>
+    </div>
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">Russian</h3>
+            <div class="languagetoggle" id="russiantoggle" onclick="languagesetter('russian')">
+                <div class="languageindicator" id="russianindicator"></div>
+            </div>
+        </div>
+        <div class="notyetimplemented"><h3 class="chakrafont">Feature NYI</h3></div>
+    </div>
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">English</h3>
+            <div class="languagetoggle" id="englishtoggle" onclick="languagesetter('english')">
+                <div class="languageindicator" id="englishindicator"></div>
+            </div>
+        </div>
+    </div>
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">German</h3>
+            <div class="languagetoggle" id="germantoggle" onclick="languagesetter('german')">
+                <div class="languageindicator" id="germanindicator"></div>
+            </div>
+        </div>
+        <div class="notyetimplemented"><h3 class="chakrafont">Feature NYI</h3></div>
+    </div>
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">French</h3>
+            <div class="languagetoggle" id="frenchtoggle" onclick="languagesetter('french')">
+                <div class="languageindicator" id="frenchindicator"></div>
+            </div>
+        </div>
+        <div class="notyetimplemented"><h3 class="chakrafont">Feature NYI</h3></div>
+    </div>
+    <div class="languageoption themetarget">
+        <div class="languagetogglecontainer themetarget">
+            <h3 class="chakrafont languagetitle">Spanish</h3>
+            <div class="languagetoggle" id="spanishtoggle" onclick="languagesetter('spanish')">
+                <div class="languageindicator" id="spanishindicator"></div>
+            </div>
+        </div>
+        <div class="notyetimplemented"><h3 class="chakrafont">Feature NYI</h3></div>
+    </div>
+</div>
+                </div>
+                <footer class="themetarget">
+                        <div class="filler titiliumfont themetarget">
+                                Space: the final frontier. These are the voyages of the starship fartflier. Its
+                                five-year mission: to explore strange new worlds. To seek out new life and new
+                                civilizations. To boldly go where no fartblast has gone before!
+                        </div>
+                        <div class="contact themetarget">
+                                <h3 class="chakrafont">Contact</h3>
+                                <ul>
+                                        <li class="titiliumfont">Phone: <br> +44 1632 960811 </li>
+                                        <li class="titiliumfont">Fax: <br> +44 161 999 8888 </li>
+                                        <li class="titiliumfont">Email: <br> fake@email.notreal.ru</li>
+                                </ul>
+                        </div>
+                </footer>
+        </div>
+
+        <script src="JS/main.js"></script>
+</body>
+
+</html>
