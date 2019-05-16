@@ -249,6 +249,8 @@ function languageapplier(load) {
 
 }
 
+
+
 document.querySelector('#dropdownbutton').addEventListener('click', function() {
     let dropdown = document.querySelector('.dropdownmenu')
     let isclosed = dropdown.getAttribute('collapsed') === 'true'
@@ -272,53 +274,63 @@ window.onload = languageapplier()
 
 
 
-// nothing below this point actually works
+// Doesn't work, loads immediately and not after DOM load
+// window.onload = imageload()
 
-// Fungerar typ som If/else-sats, är document.readyState === "interactive" eller document.readyState === "complete". ger den callback().
-// Annars ger den document.addEventListener("DOMContentLoaded", callback())
-// function DOMReady(callback) {
-    //     document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback())
-// }
-// DOMReady(function () {
-//     let item_1 = document.getElementById("index_item_1")
-//     let item_2 = document.getElementById("index_item_2")
-
-//     if (item_1 == document.getElementsByClassName("index_blackhole_loading")[0]) {
-
-//         item_1.classList.add("index_blackhole")
-//         item_1.classList.remove("index_blackhole_loading")
-
-//     } else if (item_1 == document.getElementsByClassName("index_planet_loading")[0]) {
-
-//         item_1.classList.add("index_planet")
-//         item_1.classList.remove("index_planet_loading")
-
-//     } else if (item_1 == document.getElementsByClassName("index_pulsar_loading")[0]) {
-
-//         item_1.classList.add("index_pulsar")
-//         item_1.classList.remove("index_pulsar_loading")
-
-//     } else {
-//         console.log("something went wrong, contact administrator")
-//     }
-
-//     if (item_2 == document.getElementsByClassName("index_blackhole_loading")[0]) {
-
-//         item_2.classList.add("index_blackhole")
-//         item_2.classList.remove("index_blackhole_loading")
-
-//     } else if (item_2 == document.getElementsByClassName("index_planet_loading")[0]) {
-
-//         item_2.classList.add("index_planet")
-//         item_2.classList.remove("index_planet_loading")
-
-//     } else if (item_2 == document.getElementsByClassName("index_pulsar_loading")[0]) {
-
-//         item_2.classList.add("index_pulsar")
-//         item_2.classList.remove("index_pulsar_loading")
-
-//     } else {
-//         console.log("something went wrong, contact administrator")
-//     }
-
-// })
+// function imageload(finished_loading) {
+//                 let locations = document.getElementsByClassName("loading")
+//                 let i = 0
+//                 let imagelocation
+                
+//                 if (locations != null) {
+                    
+//                     while (i < 2) {
+//                         locations = document.getElementsByClassName("loading")
+                        
+//                         if (locations[0].classList.contains("index_blackhole_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("index_blackhole_loading")
+//                             imagelocation[0].classList.add("index_blackhole")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("index_blackhole_loading")
+            
+//                         }else if (locations[0].classList.contains("index_planet_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("index_planet_loading")
+//                             imagelocation[0].classList.add("index_planet")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("index_planet_loading")
+                            
+//                         }else if (locations[0].classList.contains("index_pulsar_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("index_pulsar_loading")
+//                             imagelocation[0].classList.add("index_pulsar")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("index_pulsar_loading")
+                            
+//                         }else if (locations[0].classList.contains("blackholeimage_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("blackholeimage_loading")
+//                             imagelocation[0].classList.add("blackholeimage")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("blackholeimage_loading")
+                            
+//                         }else if (locations[0].classList.contains("planetimage_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("planetimage_loading")
+//                             imagelocation[0].classList.add("planetimage")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("planetimage_loading")
+                            
+//                         }else if (locations[0].classList.contains("pulsarimage_loading")) {
+            
+//                             imagelocation = document.getElementsByClassName("pulsarimage_loading")
+//                             imagelocation[0].classList.add("pulsarimage")
+//                             imagelocation[0].classList.remove("loading")
+//                             imagelocation[0].classList.remove("pulsarimage_loading")
+                        
+//                         }
+//                         i += 1
+//                     }
+//                 }
+//             }
