@@ -1,1 +1,23 @@
-@media
+@media only screen and (min-device-width: 600px)
+    
+    body
+        overflow: scroll
+        overflow-x: hidden
+        display: flex
+        flex-direction: row
+
+    .wrapper
+        grid-template-rows: 4rem auto auto auto
+
+    .content
+        min-height: 0
+
+    #desktop_height_header_image
+        display: block
+        height: 4rem
+        background-image: url(../Img/Header_image_Desktop.jpg)
+        background-size: cover
+
+    ::-webkit-scrollbar
+        width: 0
+        background: transparent

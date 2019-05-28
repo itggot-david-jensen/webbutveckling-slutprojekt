@@ -27,8 +27,8 @@ function opendropdown(element) {
 function content_in_index(load) {
     let number_1 = Math.floor(Math.random() * 3) + 1
     let number_2 = Math.floor(Math.random() * 3) + 1
-    let item_1 = document.getElementById("index_item_1")
-    let item_2 = document.getElementById("index_item_2")
+    let item_1 = document.getElementById("mobile_index_item_1")
+    let item_2 = document.getElementById("mobile_index_item_2")
     let blackholes = '<a href="black_holes.html"><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Black holes</p></div></a>'
     let planets = '<a href="planets.html"><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Planets</p></div></a>'
     let pulsars = '<a href="pulsars.html"><div class="index_header"><p class="index_header_text chakrafont themetexttarget">Pulsars</p></div></a>'
@@ -249,24 +249,35 @@ function languageapplier(load) {
 
 }
 
-
-
+function myFunction(element) {
+    let dropdown = document.querySelector('.dropdownmenu')
+    if (element.matches) { 
+        closedropdown(dropdown)
+        content_in_index()
+    } else {
+      
+    }
+}
+  
+  
 document.querySelector('#dropdownbutton').addEventListener('click', function() {
     let dropdown = document.querySelector('.dropdownmenu')
     let isclosed = dropdown.getAttribute('collapsed') === 'true'
-    
+      
     if (isclosed) {
-        opendropdown(dropdown)
-        dropdown.setAttribute('collapsed', 'false')
+          opendropdown(dropdown)
+          dropdown.setAttribute('collapsed', 'false')
     } else {
         closedropdown(dropdown)
     }
 })
 
+let element = window.matchMedia("(max-width: 600px)")
 let dropdown = document.querySelector('.dropdownmenu')
 
-window.onload = closedropdown(dropdown)
-window.onload = content_in_index()
+myFunction(element) 
+element.addListener(myFunction)
+// window.onload = content_in_index()
 window.onload = loadtheme()
 window.onload = manualthemesetter()
 window.onload = defaultlanguagesetter()
@@ -278,7 +289,7 @@ window.onload = languageapplier()
 // window.onload = imageload()
 
 // function imageload(finished_loading) {
-//                 let locations = document.getElementsByClassName("loading")
+    //                 let locations = document.getElementsByClassName("loading")
 //                 let i = 0
 //                 let imagelocation
                 
